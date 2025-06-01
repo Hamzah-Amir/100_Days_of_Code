@@ -2,13 +2,13 @@ try:
     def encode():
         message = input("Enter your message: ").upper()
         
-        if len(message) > 3:
+        if len(message) >= 3:
             encoded_message = message.split()
             encoded_words = []
             for word in encoded_message:
                 encoded_word = word[1:] + word[0]
                 encoded_word = 'uon' + encoded_word
-                encoded_word = encoded_word + "acs"
+                encoded_word = encoded_word + "acd"
                 encoded_words.append(encoded_word)
             return ' '.join(encoded_words)
         else:
