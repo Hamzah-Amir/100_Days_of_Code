@@ -1,4 +1,6 @@
-from math import sqrt,pi
+import math
 
-a = sqrt(16) * pi
+a = math.sqrt(16) * math.pi
 print(a)
+
+print(dir(math))
