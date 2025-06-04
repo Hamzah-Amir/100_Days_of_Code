@@ -1,0 +1,7 @@
+Hello! This is a sample text file.
+It contains multiple lines of random content.
+Python is a wonderful programming language.
+File handling is an important concept to learn.
+Today is a great day for coding!
+The quick brown fox jumps over the lazy dog.
+Learning file operations is fun and useful. 
