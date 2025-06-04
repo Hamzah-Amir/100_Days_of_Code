@@ -1,0 +1,10 @@
+The quick brown fox jumps over the lazy dog.
+Python programming is fun and exciting!
+Learning file handling in Python is essential.
+This is a sample text file with multiple lines.
+Each line contains different information.
+We can read and write to files easily.
+File operations are important for data persistence.
+Practice makes perfect in programming.
+Keep coding and keep learning!
+End of the sample text file. 
