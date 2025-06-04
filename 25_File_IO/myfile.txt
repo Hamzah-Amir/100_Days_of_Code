@@ -1,0 +1,4 @@
+Hello! This is a sample text file.
+Welcome to file I/O operations in Python.
+This is a new line.
+This is another new line.
