@@ -14,3 +14,9 @@ add = lambda x, y: x + y
 print(add(3, 4))
 
 # Note only use lamba functions for simple expressions
+
+a = lambda x,y,z: x+y-z
+
+print(a(5,85,2))
+
+      
