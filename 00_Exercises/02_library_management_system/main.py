@@ -1,10 +1,10 @@
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 @dataclass
 class Library:
-    name: str = "Library" # You can also write your name while making instance by only defining datatype in class
-    books: list = field(default_factory=lambda: ["Urdu","Islamiat", "English", "Math"])
-    no_of_books: int = field(init=False)
+    name: str = "My Library" # You can also write your name while making instance by only defining datatype in class
+    books = ["Urdu","Islamiat", "English", "Math"]
+    no_of_books: int = len(books)
 
     def __post_init__(self):
         self.no_of_books = len(self.books)
@@ -55,14 +55,16 @@ while True: # Control flow of program
         inp = input("Are you an admin of library or a member: ").lower() # Defining role of user in library
 
         if inp == 'admin': # Control flow for admin of a library
-            library = Library(name=input("Enter Name Of Your Library: "))
-            purpose = input("Do you want to add a book or remove a book from Library or view details(add,remove,info): ").lower()
+            purpose = input("Do you want to rename your library or add a book or remove a book from Library or view details(add,remove,info): ").lower()
             
-            if purpose == 'add':
+            if purpose == 'rename':
+                library = Library(name=input("Enter Name Of Your Library: "))
+
+            elif purpose == 'add':
                 try:
                     print("\nProcess of Adding New Book.")
-                    book = input("Enter name of book you want to add in your library: ")
-                    library.add_books(book)
+                    book_name = input("Enter name of book you want to add in your library: ")
+                    library.add_books(book_name)
                 except Exception as e:
                     print(e)
             
