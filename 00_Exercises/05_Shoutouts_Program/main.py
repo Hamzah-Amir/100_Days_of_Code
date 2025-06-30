@@ -10,3 +10,5 @@ def shoutout():
         speaker.Speak(f"Shoutout to {name}!")
 
 shoutout()  
+# This program uses the SAPI.SpVoice to give shoutouts to each name in the list.
+# Make sure you have the necessary permissions to use the speech synthesis feature.
