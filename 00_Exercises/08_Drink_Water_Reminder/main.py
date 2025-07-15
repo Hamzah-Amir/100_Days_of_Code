@@ -7,7 +7,7 @@ import winsound
 winsound.MessageBeep()
 
 while True:
-    time.sleep(10)
+    time.sleep(3600)
     winsound.PlaySound("SystemAsterisk", winsound.SND_ALIAS)
     notification.notify(
         app_name = "💧 Hydration Reminder",
